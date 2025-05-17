@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-16 09:57:00 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6NTI6MTkgIjsyMTA5"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6NTc6MDAgIjsxOzIyMTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite uma base:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite um expoente:&quot;" newline="True"/>
+            <input variable="b"/>
+            <call expression="elevado(a,b)"/>
+            <output expression="&quot;Resultado: &quot; &amp;elevado(a,b)" newline="True"/>
+        </body>
+    </function>
+    <function name="elevado" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a^b"/>
+        </body>
+    </function>
+</flowgorithm>

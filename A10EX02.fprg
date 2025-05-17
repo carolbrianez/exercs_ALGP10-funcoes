@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-16 08:43:36 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDg6Mzc6NTkgIjsyMTE1"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDg6NDM6MzYgIjsyOzIyMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="latir(true)"/>
+            <call expression="latir(false)"/>
+        </body>
+    </function>
+    <function name="latir" type="None" variable="">
+        <parameters>
+            <parameter name="muito" type="Boolean" array="False"/>
+        </parameters>
+        <body>
+            <if expression="muito">
+                <then>
+                    <output expression="&quot;au, au, au&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;au&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

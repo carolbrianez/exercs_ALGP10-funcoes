@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-16 08:51:04 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDg6Mzc6NTkgIjsyMTE1"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDg6NTE6MDQgIjszOzIyMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="latir(true)"/>
+            <call expression="latir(false)"/>
+            <call expression="miar(true, &quot;miau&quot;)"/>
+            <call expression="miar(false, &quot;miauuuuu&quot;)"/>
+            <call expression="latir(true)"/>
+        </body>
+    </function>
+    <function name="latir" type="None" variable="">
+        <parameters>
+            <parameter name="muito" type="Boolean" array="False"/>
+        </parameters>
+        <body>
+            <if expression="muito">
+                <then>
+                    <output expression="&quot;au, au, au&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;au&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="miar" type="None" variable="">
+        <parameters>
+            <parameter name="freq" type="Boolean" array="False"/>
+            <parameter name="t" type="String" array="False"/>
+        </parameters>
+        <body>
+            <if expression="freq">
+                <then>
+                    <output expression="t&amp;&quot;, &quot;&amp;t&amp;&quot;, &quot;&amp;t&amp;&quot;, &quot;&amp;t&amp;&quot;, &quot;&amp;t" newline="True"/>
+                </then>
+                <else>
+                    <output expression="t" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

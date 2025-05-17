@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-16 09:03:44 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6MDI6MDQgIjsyMDk4"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6MDM6NDQgIjsxOzIyMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="boasVindas"/>
+        </body>
+    </function>
+    <function name="boasVindas" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Bem vindo(a)!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

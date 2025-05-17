@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-16 09:51:56 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6MTA6MDQgIjsyMDk3"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6NTE6NTYgIjszOzIyMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <call expression="mes(x)"/>
+            <output expression="mes(x)" newline="True"/>
+            <while expression="x!=-1">
+                <input variable="x"/>
+                <call expression="mes(x)"/>
+                <output expression="mes(x)" newline="True"/>
+            </while>
+        </body>
+    </function>
+    <function name="mes" type="String" variable="m">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="m" type="String" array="False" size=""/>
+            <if expression="x==1">
+                <then>
+                    <assign variable="m" expression="&quot;janeiro&quot;"/>
+                </then>
+                <else>
+                    <if expression="x==2">
+                        <then>
+                            <assign variable="m" expression="&quot;fevereiro&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="x==3">
+                                <then>
+                                    <assign variable="m" expression="&quot;mar&#231;o&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="x==4">
+                                        <then>
+                                            <assign variable="m" expression="&quot;abril&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="x==5">
+                                                <then>
+                                                    <assign variable="m" expression="&quot;maio&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="x==6">
+                                                        <then>
+                                                            <assign variable="m" expression="&quot;junho&quot;"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="x==7">
+                                                                <then>
+                                                                    <assign variable="m" expression="&quot;julho&quot;"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="x==8">
+                                                                        <then>
+                                                                            <assign variable="m" expression="&quot;agosto&quot;"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="x==9">
+                                                                                <then>
+                                                                                    <assign variable="m" expression="&quot;setembro&quot;"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="x==10">
+                                                                                        <then>
+                                                                                            <assign variable="m" expression="&quot;outubro&quot;"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="x==11">
+                                                                                                <then>
+                                                                                                    <assign variable="m" expression="&quot;novembro&quot;"/>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="x==12">
+                                                                                                        <then>
+                                                                                                            <assign variable="m" expression="&quot;dezembro&quot;"/>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <if expression="x=0 || x&gt;=13">
+                                                                                                                <then>
+                                                                                                                    <assign variable="m" expression="&quot;op&#231;&#227;o inv&#225;lida!&quot;"/>
+                                                                                                                </then>
+                                                                                                                <else>
+                                                                                                                    <if expression="x==-1">
+                                                                                                                        <then>
+                                                                                                                            <assign variable="m" expression="&quot;fim do programa!&quot;"/>
+                                                                                                                        </then>
+                                                                                                                        <else/>
+                                                                                                                    </if>
+                                                                                                                </else>
+                                                                                                            </if>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

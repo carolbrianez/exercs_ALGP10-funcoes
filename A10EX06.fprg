@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-16 09:10:00 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6MDQ6MDMgIjsyMDk5"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6MTA6MDAgIjsxOzIyMDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="mensagem(1)"/>
+            <call expression="mensagem(2)"/>
+            <call expression="mensagem(2)"/>
+            <call expression="mensagem(3)"/>
+        </body>
+    </function>
+    <function name="mensagem" type="None" variable="">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <if expression="x==1">
+                <then>
+                    <output expression="&quot;Bom dia!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x==2">
+                        <then>
+                            <output expression="&quot;Boa tarde!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Boa noite!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

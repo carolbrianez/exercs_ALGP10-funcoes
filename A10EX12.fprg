@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-23 08:07:00 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNS0yMzsiMDc6NTc6MjMgIjsyMTA3"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNS0yMzsiMDg6MDc6MDAgIjsxOzIyMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="100" direction="inc" step="10">
+                <call expression="prog(i)"/>
+            </for>
+        </body>
+    </function>
+    <function name="prog" type="None" variable="">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="r" type="String" array="False" size=""/>
+            <assign variable="r" expression="&quot;&quot;"/>
+            <for variable="i" start="1" end="100" direction="inc" step="1">
+                <if expression="i&gt;x">
+                    <then>
+                        <assign variable="r" expression="r&amp;&quot;_&quot;"/>
+                    </then>
+                    <else>
+                        <assign variable="r" expression="r&amp;&quot;=&quot;"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="x&amp;&quot;&quot;&amp;r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

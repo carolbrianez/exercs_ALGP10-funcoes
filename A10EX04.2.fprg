@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-23 07:24:51 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDg6NTE6NTkgIjsyMTEx"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTE7MjAyNS0wNS0xNjsiMDk6NDQ6MDIgIjsyOzIyMTE="/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNS0yMzsiMDc6MjQ6NTEgIjsyOzIyMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, r" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro valor:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite o segundo valor:&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="r" expression="soma(a,b)"/>
+            <output expression="&quot;O resultado da soma &#233;: &quot;&amp;r" newline="True"/>
+        </body>
+    </function>
+    <function name="soma" type="Real" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a+b"/>
+        </body>
+    </function>
+</flowgorithm>

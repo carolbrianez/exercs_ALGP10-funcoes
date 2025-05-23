@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-23 07:55:18 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNS0yMzsiMDc6NDE6MTQgIjsyMTAw"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNS0yMzsiMDc6NTU6MTggIjsxOzIyMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, p" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="r" expression="&quot;&quot;"/>
+            <input variable="p"/>
+            <for variable="i" start="0" end="len(p)-1" direction="inc" step="1">
+                <assign variable="r" expression="r&amp;maiuscula(char(p,i))"/>
+            </for>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+    <function name="maiuscula" type="String" variable="r">
+        <parameters>
+            <parameter name="v" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="r" type="String" array="False" size=""/>
+            <assign variable="r" expression="toChar(toCode(v)-32)"/>
+        </body>
+    </function>
+</flowgorithm>

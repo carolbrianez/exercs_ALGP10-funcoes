@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-23 07:40:52 "/>
+        <attribute name="created" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNS0yMzsiMDc6MDg6MzQgIjsyMTA1"/>
+        <attribute name="edited" value="QUxVTk87TEFCSFBDMTM7MjAyNS0wNS0yMzsiMDc6NDA6NTIgIjsxOzIyMDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <do expression="num!=-1">
+                <input variable="num"/>
+                <if expression="num==-1">
+                    <then/>
+                    <else>
+                        <output expression="par(num)" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+    <function name="par" type="Boolean" variable="r">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="r" type="Boolean" array="False" size=""/>
+            <if expression="x%2==0">
+                <then>
+                    <assign variable="r" expression="true"/>
+                </then>
+                <else>
+                    <assign variable="r" expression="false"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
